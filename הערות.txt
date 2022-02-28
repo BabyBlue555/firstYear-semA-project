@@ -1,0 +1,33 @@
+notes:
+ 
+ 
+1. *data leakage is going to be prevented by :
+ resampling method - k-fold Cross-Validation in order to  evaluate several candidate models and select the best one.. A dataset is partitioned into k groups, i.e , a big number of validation sets.
+ it solves the problem of overfitting and makes the models generalize to unknown data, since it doesn't to the evaluation only on one specif set of data from the training set, but on all of the set, and in dirrefernt combinations.
+ 
+ this  resampling method is also included in tasks like feature selection and randomize search. 
+
+
+
+
+2. Comparing cross-validation to train/test split
+Advantages of cross-validation:
+
+More accurate estimate of out-of-sample accuracy
+More "efficient" use of data (every observation is used for both training and testing)
+Advantages of train/test split:
+
+Runs K times faster than K-fold cross-validation
+Simpler to examine the detailed results of the testing process
+
+
+מה עשיתי בשביל לשפר את המודלים של הקלאסיפיקציה:
+
+שיניתי מטריקות- בדקתי על כמה מטריקות בכל מודל
+שיניתי היפרפרמטרים ידנית
+קרוס ולידציה
+רנדום סירץ'- כיוונון של היפרפרמטרים
+
+
+
+Call warnings.filterwarnings(action, category=DeprecationWarning) with action as "ignore" and category set to DeprecationWarning to ignore any deprecation warnings that may rise.
